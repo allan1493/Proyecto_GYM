@@ -317,6 +317,26 @@ namespace ProyectoGym
                 conexion.Close();
             }
         }
+
+        protected void Button4_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Facturar.aspx");
+        }
+
+        protected void Button5_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Productos.aspx");
+        }
+
+        protected void Button6_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Reportes.aspx");
+        }
+
+        protected void Button7_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("MenuSA.aspx");
+        }
     }
 
     

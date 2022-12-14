@@ -10,45 +10,43 @@
 </head>
 <body>
     <form id="form1" runat="server">
+        
+  <div class="subnav">
+    
+      <asp:Button ID="Button1" class="subnavbtn" runat="server" Text="Clientes" OnClick="Button1_Click" />
+    </div>
+  
+  <div class="subnav">
+    
+      <asp:Button ID="Button2" class="subnavbtn" runat="server" Text="Productos" OnClick="Button2_Click" />
+    </div>
+  
+  <div class="subnav">
+    
+      <asp:Button ID="Button3" class="subnavbtn" runat="server" Text="Facturar" OnClick="Button3_Click" />
+  </div>
+  <div class="subnav">
+    
+        <asp:Button ID="Button4" class="subnavbtn" runat="server" Text="Reportes" OnClick="Button4_Click" />
+    
+  </div>
         <div>
-            <a href="#home">Home</a>
-  <div class="subnav">
-    <button class="subnavbtn">Clientes <i class="fa fa-caret-down"></i></button>
-    <div class="subnav-content">
-      <a href="#company">Consultar </a>
-      <a href="#team">Crear </a>
-      <a href="#careers">Actualizar </a>
-        <a href="#careers">Eliminar </a>
-    </div>
-  </div>
-  <div class="subnav">
-    <button class="subnavbtn">Rutinas <i class="fa fa-caret-down"></i></button>
-    <div class="subnav-content">
-      <a href="#company">Consultar </a>
-      <a href="#team">Crear </a>
-      <a href="#careers">Actualizar </a>
-        <a href="#careers">Eliminar </a>
-    </div>
-  </div>
-  <div class="subnav">
-    <button class="subnavbtn">Facturar <i class="fa fa-caret-down"></i></button>
-    <div class="subnav-content">
-      <a href="#company">Consultar </a>
-      <a href="#team">Crear </a>
-      <a href="#careers">Actualizar </a>
-        <a href="#careers">Eliminar </a>
-    </div>
-  </div>
-  <div class="subnav">
-    <button class="subnavbtn">Reportes <i class="fa fa-caret-down"></i></button>
-    <div class="subnav-content">
-      <a href="#company">Consultar </a>
-      <a href="#team">Crear </a>
-      <a href="#careers">Actualizar </a>
-        <a href="#careers">Eliminar </a>
-    </div>
-  </div>
+
         </div>
+        <div>
+
+        </div>
+        <div>
+
+        </div>
+        <div >
+            <br />
+            <br />
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Label ID="Label1" CssClass="label"  runat="server" Text="Bienvenido al GYM Saitama!" Width="142px"></asp:Label>
+        </div>
+        
     </form>
 </body>
 </html>

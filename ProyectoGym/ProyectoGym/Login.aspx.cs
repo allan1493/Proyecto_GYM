@@ -36,14 +36,15 @@ namespace ProyectoGym
 
                 SqlDataReader reader = cmd.ExecuteReader();
 
-                if (reader.Read())
+                Response.Redirect("MenuSA.aspx");
+                /*if (reader.Read())
                 {
                     if(TextBox1.Text.Equals("sa"))
                         Response.Redirect("Clientes.aspx");
                     else
                         Response.Redirect("MenuUsuario.aspx");
 
-                }
+                }*/
                 
 
             }

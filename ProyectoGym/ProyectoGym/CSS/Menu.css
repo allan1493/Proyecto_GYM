@@ -5,6 +5,12 @@
     overflow: hidden;
     background-color: #333;
 }
+
+.label {
+    font-weight: bold;
+    display: inline-block;
+    color:white;
+}
 /* The navigation menu */
 .navbar {
     overflow: hidden;

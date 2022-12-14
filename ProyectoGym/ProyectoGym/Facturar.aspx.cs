@@ -277,7 +277,7 @@ namespace ProyectoGym
         {
             agregarMaestroFactura();
             agregarDetFactura();
-
+            Label1.Text = "Facturado exitosamente";
         }
 
         protected void Lines_SelectedIndexChanged(object sender, EventArgs e)
@@ -313,7 +313,24 @@ namespace ProyectoGym
 
         }
 
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Clientes.aspx");
+        }
 
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Productos.aspx");
+        }
 
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("MenuSA.aspx");
+        }
+
+        protected void Button4_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Reportes.aspx");
+        }
     }
 }

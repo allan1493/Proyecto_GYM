@@ -9,9 +9,21 @@
     <link rel="stylesheet" href="CSS/llenado.css">
 </head>
 <body>
-    <header></header>
+    
     <form id="form1" runat="server" class="form">
-        <div>Clientes
+        <header class="subnav">
+        <asp:Button ID="Button4" CssClass="subnavbtn" runat="server" Text="Facturar" OnClick="Button4_Click" />
+        <asp:Button ID="Button5" CssClass="subnavbtn" runat="server" Text="Productos" OnClick="Button5_Click" />
+        <asp:Button ID="Button6" CssClass="subnavbtn" runat="server" Text="Reportes" OnClick="Button6_Click" />
+        <asp:Button ID="Button7" CssClass="subnavbtn" runat="server" Text="Home" OnClick="Button7_Click" />
+    </header>
+        <div>
+            <br />
+            <br />
+            
+            <br />
+            <br />
+            
         </div>
         <div style="overflow:auto">
         <div class="textbox">

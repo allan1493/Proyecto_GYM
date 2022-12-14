@@ -36,7 +36,7 @@ namespace ProyectoGym
                 SqlDataReader reader = cmd.ExecuteReader();
 
                 conexion.Close();
-
+                Label1.Text = "Agregado Exitosamente";
             }
 
             catch (System.Data.SqlClient.SqlException ex) {
@@ -46,7 +46,7 @@ namespace ProyectoGym
             {
                 conexion.Close();
             }
-
+            
         }
 
         protected void Actualizar_Click(object sender, EventArgs e)
@@ -58,14 +58,15 @@ namespace ProyectoGym
 
                 SqlCommand cmd = new SqlCommand("actualizarProducto", conexion);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@codigo", GridView1.SelectedRow.Cells[1].Text);
-                cmd.Parameters.AddWithValue("@nombre", Nombre.Text);
+                cmd.Parameters.AddWithValue("@codigo", CodigoText.Text);
+                cmd.Parameters.AddWithValue("@nombre", NombreText.Text);
                 cmd.Parameters.AddWithValue("@precio", PrecioText.Text);
 
 
                 SqlDataReader reader = cmd.ExecuteReader();
 
                 conexion.Close();
+                Label1.Text = "Actualizado exitosamente";
 
             }
 
@@ -116,10 +117,11 @@ namespace ProyectoGym
 
                 SqlCommand cmd = new SqlCommand("eliminarProducto", conexion);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@codigo", GridView1.SelectedRow.Cells[1].Text);
+                cmd.Parameters.AddWithValue("@codigo", CodigoText.Text);
                 SqlDataReader reader = cmd.ExecuteReader();
 
                 conexion.Close();
+                Label1.Text = "Eliminado Exitosamente";
 
             }
 
@@ -131,6 +133,26 @@ namespace ProyectoGym
             {
                 conexion.Close();
             }
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Clientes.aspx");
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Facturar.aspx");
+        }
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("MenuSA.aspx");
+        }
+
+        protected void Button4_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Reportes.aspx");
         }
     }
 }

@@ -77,9 +77,10 @@
     <Content Include="Login.aspx" />
     <Content Include="Master\Master.aspx" />
     <Content Include="MenuSA.aspx" />
-    <Content Include="MenuUsuario.aspx" />
     <Content Include="Productos.aspx" />
     <Content Include="Reportes.aspx" />
+    <Content Include="SQL\SQLProyecto.sql" />
+    <Content Include="SQL\StoredProcedures.sql" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -118,13 +119,6 @@
     <Compile Include="MenuSA.aspx.designer.cs">
       <DependentUpon>MenuSA.aspx</DependentUpon>
     </Compile>
-    <Compile Include="MenuUsuario.aspx.cs">
-      <DependentUpon>MenuUsuario.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="MenuUsuario.aspx.designer.cs">
-      <DependentUpon>MenuUsuario.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Productos.aspx.cs">
       <DependentUpon>Productos.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -150,9 +144,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="C sharp\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
